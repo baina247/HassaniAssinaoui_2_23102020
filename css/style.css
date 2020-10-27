@@ -1,0 +1,148 @@
+@font-face
+{	/*nouvelle police nommée Relaway*/
+	font-family: 'Raleway';
+	src: url('polices/Raleway-Black.ttf');
+	src:url('polices/Raleway-BlackItalic.ttf');
+	src:url('polices/Raleway-Bold.ttf');
+	src:url('polices/Raleway-BoldItalic.ttf');
+	src:url('polices/Raleway-ExtraBold.ttf');
+	src:url('polices/Raleway-ExtraLight.ttf');
+	src:url('polices/Raleway-ExtraLightItalic.ttf');
+	src:url('polices/Raleway-Italic.ttf');
+	src:url('polices/Raleway-Light.ttf');
+	src:url('polices/Raleway-LightItalic.ttf');
+	src:url('polices/Raleway-Medium.ttf');
+	src:url('polices/Raleway-MediumItalic.ttf');
+	src:url('polices/Raleway-Regular.ttf');
+	src:url('polices/Raleway-SemiBold.ttf');
+	src:url('polices/Raleway-SemiBoldItalic.ttf');
+	src:url('polices/Raleway-Thin.ttf');
+	src:url('polices/Raleway-ThinItalic.ttf');
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+ul
+{
+	list-style: none;
+}
+
+h1
+{
+	padding: 10px;
+}
+
+h2
+{
+	padding: 10px;
+}
+
+h3
+{
+	padding: 10px
+}
+
+p
+{
+	padding: 10px
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: pink;
+	padding: 10px;
+}
+
+.menu
+{
+	display: flex;
+	border: 1px solid red;
+}
+
+.menu li
+{
+	border: 1px solid green;
+	margin: 5px;
+}
+.Filtres
+{
+	display: flex;
+	padding: 10px;
+}
+.map-marker
+{
+	display: flex;
+	padding: 10px;
+	margin: 5px;
+}
+
+input
+{
+	border: 1px solid #F2F2F2;
+}
+/* bouton de recherche */
+.recherche
+{
+	border: 1px solid #0065FC;
+	background-color: #0065FC;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 5px;
+	color: white;
+}
+/* bouton filtres */
+.btn
+{
+	border: 1px solid #DEEBFF;
+	background-color: white;
+	border-radius: 20px;
+	padding: 15px;
+}
+
+.btn:hover
+{
+	background-color: #DEEBFF;
+}
+.fa
+{
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px;
+}
+.fas
+{
+	border: 1px solid #DEEBFF;
+	background-color: #DEEBFF;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 5px;
+	color: #0065FC;
+	
+	
+}
+body
+{
+
+}
+
+article
+{
+
+}
+
+aside
+{
+
+}
+
+footer li
+{
+	padding: 10px;
+}

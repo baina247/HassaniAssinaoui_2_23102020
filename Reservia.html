@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Reservia.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<!-- icon du site web mais n'en contient aucun pour le moment-->
 	<link rel="icon" href="images/xxx.png" type="Images/icon">
 	<title>Reservia</title>
 </head>
+
 <body>
-	<div id="bloc_1">
-		<header>
-			<div id="logo">
-				<img src="images/Reservia@3x.png" alt="logo du site reservia" />
-				
-		</header>
+	<!-- menu de navigation -->
+	<header>
+		<div>
+			<img src="images/logo/Reservia.svg" alt="logo de Reservia" />
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="xxx">Hébergements</a></li>
+				<li><a href="xxx">Activités</a></li>
+				<li><a href="xxx">S'inscrire</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h1>Trouver votre hébergement pour des vacances de rêve</h1>
+		<p>En plein centre ville ou en pleine nature</p>
+		<div class="map-marker">
+			<i class="fa fa-map-marker-alt"></i>
+			<input type="search" name="search" placeholder="Marseille, France" />
+			<button class="recherche">Recherche</button>
+		</div>
+		<!-- Filtre -->
+		<div class="Filtres">
+			<h3>Filtres</h3>
+			<i class="fas fa-money-bill-wave"></i>
+			<button class="btn" onclick="filterSelection('Economique')"> Economique</button>
+			<i class="fas fa-child"></i>
+			<button class="btn" onclick="filterSelection('Familial')"> Familial</button>
+			<i class="fas fa-heart"></i>
+			<button class="btn" onclick="filterSelection('Romantique')"> Romantique</button>
+			<i class="fas fa-dog"></i>
+			<button class="btn" onclick="filterSelection('animaux autorisés')"> Animaux autorisés</button>
+		</div>
+	</section>
+
+	<footer>
+		<h3>A propos</h3>
+		<ul>
+			<li><a href="xxx">Fonctionnement du site</a></li>
+			<li><a href="xxx">Conditions générales de vente</a></li>
+			<li><a href="xxx">Données et confidentialité</a></li>
+		</ul>
+		<h3>Nos hébergements</h3>
+		<ul>
+			<li><a href="xxx">Charte qualité</a></li>
+			<li><a href="xxx">Soumettre votre hôtel</a></li>
+		</ul>
+		<h3>Assistance</h3>
+		<ul>
+			<li><a href="xxx">Centre d'aide</a></li>
+			<li><a href="xxx">Nous contacter</a></li>
+		</ul>
+	</footer>
 </body>
 </html>
