@@ -3,25 +3,20 @@
 	font-family: 'Raleway';
 	src: url('polices/Raleway-Black.ttf');
 	src:url('polices/Raleway-BlackItalic.ttf');
-	src:url('polices/Raleway-Bold.ttf');
-	src:url('polices/Raleway-BoldItalic.ttf');
-	src:url('polices/Raleway-ExtraBold.ttf');
-	src:url('polices/Raleway-ExtraLight.ttf');
-	src:url('polices/Raleway-ExtraLightItalic.ttf');
-	src:url('polices/Raleway-Italic.ttf');
+	src:url('polices/Raleway-Bold.ttf');	
+	src:url('polices/Raleway-ExtraBold.ttf');	
 	src:url('polices/Raleway-Light.ttf');
-	src:url('polices/Raleway-LightItalic.ttf');
 	src:url('polices/Raleway-Medium.ttf');
-	src:url('polices/Raleway-MediumItalic.ttf');
 	src:url('polices/Raleway-Regular.ttf');
-	src:url('polices/Raleway-SemiBold.ttf');
-	src:url('polices/Raleway-SemiBoldItalic.ttf');
-	src:url('polices/Raleway-Thin.ttf');
-	src:url('polices/Raleway-ThinItalic.ttf');
+	src:url('polices/Raleway-SemiBold.ttf');	
+	
+	
 }
 
 *
 {
+	font-family: 'Raleway-Regular';
+	font-size: 1.01em;
 	padding: 0;
 	margin: 0;
 }
@@ -54,26 +49,54 @@ header
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: pink;
 	padding: 10px;
 }
-
+/* menu navigation */
 .menu
 {
 	display: flex;
-	border: 1px solid red;
+	border: 1px solid none;
 }
 
 .menu li
 {
-	border: 1px solid green;
+	border: 1px solid none;
 	margin: 5px;
 }
-.Filtres
+/* lien hébergements */
+a.lien1:visited, a.lien1:link
 {
-	display: flex;
-	padding: 10px;
+	text-decoration: none;
 }
+
+a.lien1:hover, a.lien1:active
+{
+	text-decoration: overline;
+	color: #0065FC;
+}
+/* lien activités */
+a.lien2:visited, a.lien2:link
+{
+	text-decoration: none;
+}
+
+a.lien2:hover, a.lien2:active
+{
+	text-decoration: overline;
+	color: #0065FC;
+}
+/* lien s'inscrire */
+a.lien3:visited, a.lien3:link
+{
+	text-decoration: none;
+}
+
+a.lien3:hover, a.lien3:active
+{
+	text-decoration: overline;
+	color: #0065FC;
+}
+/*icone de recherche font-awesome */
 .map-marker
 {
 	display: flex;
@@ -81,55 +104,113 @@ header
 	margin: 5px;
 }
 
-input
-{
-	border: 1px solid #F2F2F2;
-}
-/* bouton de recherche */
-.recherche
-{
-	border: 1px solid #0065FC;
-	background-color: #0065FC;
-	border-bottom-right-radius: 10px;
-	border-top-right-radius: 10px;
-	padding: 5px;
-	color: white;
-}
-/* bouton filtres */
-.btn
-{
-	border: 1px solid #DEEBFF;
-	background-color: white;
-	border-radius: 20px;
-	padding: 15px;
-}
-
-.btn:hover
-{
-	background-color: #DEEBFF;
-}
-.fa
+.map-marker .fa
 {
 	border: 1px solid #F2F2F2;
 	background-color: #F2F2F2;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	padding: 5px;
+	padding: 10px;
 }
+/* barre de recherche */
+input
+{
+	border: 1px solid #F2F2F2;
+	outline: none;
+	padding-left: 10px;
+}
+
+/* bouton recherche */
+.recherche
+{
+	border:none;
+	outline: none;
+	background-color: #0065FC;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: white;
+}
+.recherche:hover
+{
+	background-color: blue;
+}
+.recherche:active
+{
+	background-color: #0065FC; 
+}
+/* zone des filtres */
+.Filtres
+{
+	display: flex;
+	padding: 10px;
+}
+
+/* bouton filtres */
+.btn
+{
+	border: 1px solid #F2F2F2;
+	outline: none;
+	border-left-width: 1.6em;
+	border-radius: 30px;
+	padding: 10px;
+	margin-bottom: 7.5em; 
+	margin-top:7.5em;	
+	background-color: white;
+	cursor: pointer;
+}
+
+.btn:hover
+{
+	background-color: #0065FC;
+}
+
+.btn:active
+{
+	background-color: #DEEBFF;
+	color: black;
+}
+
+/* icone font-awesome filtres */
 .fas
 {
 	border: 1px solid #DEEBFF;
 	background-color: #DEEBFF;
-	border-radius: 25px;
-	padding: 10px;
-	margin: 5px;
-	color: #0065FC;
-	
-	
+	border-radius: 30px;
+	padding: 15px;
+	padding-top: 15px; 
+	margin-bottom: 10em; 
+	margin-top: 10em;
+	color: #0065FC; 
 }
-body
-{
 
+.Filtres .fas
+{
+	position: relative;
+	left: 35px;
+}
+
+.filter
+{
+	border: none;
+	background-color: white;
+	padding: 10px;
+	color: black;
+}
+/* icone info reste de logements */
+.info
+{
+	display: flex;
+	padding-left: 10px;
+}
+
+.info .fa
+{
+	border: 1px solid blue;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
 }
 
 article
@@ -139,10 +220,29 @@ article
 
 aside
 {
-
+	background-color: #F2F2F2;
 }
 
-footer li
+footer
 {
-	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	
+}
+footer div ul li
+{
+	padding: 5px;
+	margin: 5px;
+}
+/* lien bas de page */
+a.foot:visited, a.foot:link
+{
+	text-decoration: none;
+	color: black;
+}
+/* survol de la souris sur le lien */
+a.foot:hover, a.foot:active
+{
+	color: #0065FC;
 }

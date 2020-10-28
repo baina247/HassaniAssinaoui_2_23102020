@@ -17,9 +17,9 @@
 		</div>
 		<nav>
 			<ul class="menu">
-				<li><a href="xxx">Hébergements</a></li>
-				<li><a href="xxx">Activités</a></li>
-				<li><a href="xxx">S'inscrire</a></li>
+				<li><a class="lien1" href="#hébergements">Hébergements</a></li>
+				<li><a class="lien2" href="#activités">Activités</a></li>
+				<li><a class="lien3" href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,36 +32,70 @@
 			<button class="recherche">Recherche</button>
 		</div>
 		<!-- Filtre -->
+		
 		<div class="Filtres">
-			<h3>Filtres</h3>
-			<i class="fas fa-money-bill-wave"></i>
-			<button class="btn" onclick="filterSelection('Economique')"> Economique</button>
-			<i class="fas fa-child"></i>
-			<button class="btn" onclick="filterSelection('Familial')"> Familial</button>
-			<i class="fas fa-heart"></i>
-			<button class="btn" onclick="filterSelection('Romantique')"> Romantique</button>
-			<i class="fas fa-dog"></i>
-			<button class="btn" onclick="filterSelection('animaux autorisés')"> Animaux autorisés</button>
+			<h3 class="filter">Filtres</h3>			
+			<i class="fas fa-money-bill-wave fa-xs"></i>
+			<button class="btn" > Economique</button>
+			<i class="fas fa-child fa-xs"></i>
+			<button class="btn" > Familial</button>
+			<i class="fas fa-heart fa-xs"></i>
+			<button class="btn" > Romantique</button>
+			<i class="fas fa-dog fa-xs"></i>
+			<button class="btn" > Animaux autorisés</button>
+		</div>
+		<div class="info">
+			<i class="fa fa-info fa-xs"></i>
+			<p class="ville">Plus que 500 logements sont disponibles dans cette ville</p>
 		</div>
 	</section>
+	<!-- milieu de page -->	
+	<section>
+		<h2 id="hébergements">Hébergements à Marseille</h2>
+		<!--hébergements -->
+		<article>
 
+		</article>
+		
+		<aside>
+			<h2>Les plus populaires</h2>
+			<i class="fas fa-chart-line"></i>
+		</aside>
+	</section>
+
+	<!-- article bas de page activités -->
+	<section>
+		<h2 id="activités">Activités à Marseille</h2>
+		<!-- section activités -->
+		<article>
+			
+		</article>
+	</section>
+
+	<!-- bas de page -->
 	<footer>
-		<h3>A propos</h3>
-		<ul>
-			<li><a href="xxx">Fonctionnement du site</a></li>
-			<li><a href="xxx">Conditions générales de vente</a></li>
-			<li><a href="xxx">Données et confidentialité</a></li>
-		</ul>
-		<h3>Nos hébergements</h3>
-		<ul>
-			<li><a href="xxx">Charte qualité</a></li>
-			<li><a href="xxx">Soumettre votre hôtel</a></li>
-		</ul>
-		<h3>Assistance</h3>
-		<ul>
-			<li><a href="xxx">Centre d'aide</a></li>
-			<li><a href="xxx">Nous contacter</a></li>
-		</ul>
+		<div>
+			<h3>A propos</h3>
+			<ul>
+				<li><a class="foot" href="#">Fonctionnement du site</a></li>
+				<li><a class="foot" href="#">Conditions générales de vente</a></li>
+				<li><a class="foot" href="#">Données et confidentialité</a></li>
+			</ul>
+		</div>
+		<div>
+			<h3>Nos hébergements</h3>
+			<ul>
+				<li><a class="foot" href="#">Charte qualité</a></li>
+				<li><a class="foot" href="#">Soumettre votre hôtel</a></li>
+			</ul>
+		</div>
+		<div>
+			<h3>Assistance</h3>
+			<ul>
+				<li><a class="foot" href="#">Centre d'aide</a></li>
+				<li><a class="foot" href="#">Nous contacter</a></li>
+			</ul>
+		</div>
 	</footer>
 </body>
 </html>
