@@ -213,14 +213,40 @@ input
 	margin: 10px;
 }
 
-article
+.central
 {
-
+	display: flex;
+	align-items: flex-start;
 }
 
-aside
+.Cannebière
 {
-	background-color: #F2F2F2;
+	
+}
+
+.port
+{
+	
+}
+
+.mouettes
+{
+	
+}
+
+.mer
+{
+	
+}
+
+.panier
+{
+	
+}
+
+.Amina
+{
+	
 }
 
 footer
