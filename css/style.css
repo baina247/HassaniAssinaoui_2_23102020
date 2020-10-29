@@ -177,7 +177,7 @@ input
 {
 	border: 1px solid #DEEBFF;
 	background-color: #DEEBFF;
-	border-radius: 30px;
+	border-radius: 70%;
 	padding: 15px;
 	padding-top: 15px; 
 	margin-bottom: 10em; 
@@ -212,39 +212,104 @@ input
 	padding: 10px;
 	margin: 10px;
 }
-
-.central
+/* flex hebergements à marseille */
+section .central
 {
 	display: flex;
-	align-items: flex-start;
+	border: 1px solid red;
+	flex-wrap: wrap;
+	background-color: #F2F2F2;
+}
+
+.central img
+{
+	border: 2px solid green;
+	height: 10%;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+	
 }
 
 .Cannebière
+{
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: pink;
+}
+
+.central .Cannebière img
 {
 	
 }
 
 .port
 {
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: lightgreen;
+}
+
+.central .port img
+{
 	
 }
 
 .mouettes
+{
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: orange;
+}
+
+.central .mouettes img
 {
 	
 }
 
 .mer
 {
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: yellow;
+}
+
+.central .mer img
+{
 	
 }
 
 .panier
 {
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: lightcyan;
+}
+
+.central .panier img
+{
 	
 }
 
 .Amina
+{
+	border: 1px solid blue;
+	border-radius: 20px;
+	border-width: 2px;
+	height: 60em;
+	background-color: purple;
+} 
+
+.central .Amina img
 {
 	
 }
