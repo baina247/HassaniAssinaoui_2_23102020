@@ -1,24 +1,18 @@
 @font-face
 {	/*nouvelle police nommée Relaway*/
 	font-family: 'Raleway';
-	src: url('polices/Raleway-Black.ttf');
-	src:url('polices/Raleway-BlackItalic.ttf');
-	src:url('polices/Raleway-Bold.ttf');	
-	src:url('polices/Raleway-ExtraBold.ttf');	
-	src:url('polices/Raleway-Light.ttf');
-	src:url('polices/Raleway-Medium.ttf');
-	src:url('polices/Raleway-Regular.ttf');
-	src:url('polices/Raleway-SemiBold.ttf');	
-	
-	
+	src:url('polices/Raleway-VariableFont_wght.ttf')
 }
 
 *
 {
-	font-family: 'Raleway-Regular';
-	font-size: 1.01em;
 	padding: 0;
 	margin: 0;
+}
+
+body
+{
+	padding: 10px; 
 }
 
 ul
@@ -26,293 +20,216 @@ ul
 	list-style: none;
 }
 
-h1
-{
-	padding: 10px;
-}
-
-h2
-{
-	padding: 10px;
-}
-
-h3
-{
-	padding: 10px
-}
-
-p
-{
-	padding: 10px
-}
 header
 {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
 }
 /* menu navigation */
 .menu
 {
 	display: flex;
-	border: 1px solid none;
 }
 
 .menu li
 {
-	border: 1px solid none;
 	margin: 5px;
 }
-/* lien hébergements */
-a.lien1:visited, a.lien1:link
+/* lien du menu de navigation */
+a.lien_menu:visited, a.lien_menu:link
 {
 	text-decoration: none;
 }
 
-a.lien1:hover, a.lien1:active
+a.lien_menu:hover, a.lien_menu:active
 {
-	text-decoration: overline;
 	color: #0065FC;
-}
-/* lien activités */
-a.lien2:visited, a.lien2:link
-{
-	text-decoration: none;
 }
 
-a.lien2:hover, a.lien2:active
-{
-	text-decoration: overline;
-	color: #0065FC;
-}
-/* lien s'inscrire */
-a.lien3:visited, a.lien3:link
-{
-	text-decoration: none;
-}
-
-a.lien3:hover, a.lien3:active
-{
-	text-decoration: overline;
-	color: #0065FC;
-}
-/*icone de recherche font-awesome */
-.map-marker
+.container_recherche
 {
 	display: flex;
-	padding: 10px;
-	margin: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 70%;
 }
 
-.map-marker .fa
-{
-	border: 1px solid #F2F2F2;
-	background-color: #F2F2F2;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	padding: 10px;
-}
-/* barre de recherche */
 input
 {
 	border: 1px solid #F2F2F2;
 	outline: none;
-	padding-left: 10px;
+	padding-left: 20px;
 }
-
+/* icone map*/
+.icone_recherche
+{
+	border: 1px solid #F2F2F2;
+	border-width: 10px;
+	border-height: 10px;   
+	background-color: #F2F2F2;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: black;
+}
 /* bouton recherche */
-.recherche
+.bouton_recherche
 {
 	border:none;
 	outline: none;
+	align-items: center;
 	background-color: #0065FC;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
 	color: white;
+	width: 10%;
 }
-.recherche:hover
+
+.bouton_recherche:hover
 {
 	background-color: blue;
 }
-.recherche:active
+
+.bouton_recherche:active
 {
 	background-color: #0065FC; 
 }
-/* zone des filtres */
-.Filtres
+/* container des filtres */
+.container
 {
 	display: flex;
-	padding: 10px;
-}
-
-/* bouton filtres */
-.btn
-{
-	border: 1px solid #F2F2F2;
+	align-items: center;
 	outline: none;
-	border-left-width: 1.6em;
-	border-radius: 30px;
-	padding: 10px;
-	margin-bottom: 7.5em; 
-	margin-top:7.5em;	
-	background-color: white;
-	cursor: pointer;
+	border: 1px solid none;
+}
+.container_filtre
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border:1px solid #F2F2F2;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding-right: auto;
+	padding-left: auto;
+	margin: 10px;
+}
+.icone_filtre
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;	
 }
 
-.btn:hover
+.bouton_filtre
+{
+	background-color: white;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border:none;
+	outline: none;
+	font-weight: bold;
+}
+
+.container_filtre:hover, .bouton_filtre:hover
 {
 	background-color: #0065FC;
 }
 
-.btn:active
+.container_filtre:active, .bouton_filtre:active
 {
 	background-color: #DEEBFF;
 	color: black;
 }
 
-/* icone font-awesome filtres */
-.fas
-{
-	border: 1px solid #DEEBFF;
-	background-color: #DEEBFF;
-	border-radius: 70%;
-	padding: 15px;
-	padding-top: 15px; 
-	margin-bottom: 10em; 
-	margin-top: 10em;
-	color: #0065FC; 
-}
-
-.Filtres .fas
-{
-	position: relative;
-	left: 35px;
-}
-
-.filter
-{
-	border: none;
-	background-color: white;
-	padding: 10px;
-	color: black;
-}
 /* icone info reste de logements */
-.info
+.container_info
 {
 	display: flex;
-	padding-left: 10px;
+	align-items: center;
+	width: 70%
 }
 
-.info .fa
+.icone_info
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	padding: 10px;
-	margin: 10px;
+	display: flex;
+	border: 1px solid #F2F2F2;
+	color: #0065FC;
+	border-radius: 50%;
+	width: 10px;
+	padding: 3px;
+	align-content: center;
+	justify-content: center;
 }
-/* flex hebergements à marseille */
-section .central
+/* hebergements à marseille */
+.central
 {
 	display: flex;
 	border: 1px solid red;
+	width: 70%;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
 }
 
+.carte_hotel
+{
+	width: 30%;
+	border: 1px solid blue;
+}
 .central img
 {
 	border: 2px solid green;
-	height: 10%;
+	height: 7em;
+	width: 10em;	
 	border-top-right-radius: 1.1em; 
 	border-top-left-radius: 1.1em;
 	
 }
 
-.Cannebière
-{
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
-	background-color: pink;
-}
-
-.central .Cannebière img
+.cannebiere
 {
 	
+	background-color: pink;
 }
 
 .port
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
-	background-color: lightgreen;
-}
-
-.central .port img
-{
 	
+	background-color: lightgreen;
 }
 
 .mouettes
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
-	background-color: orange;
-}
-
-.central .mouettes img
-{
 	
+	background-color: orange;
 }
 
 .mer
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
-	background-color: yellow;
-}
-
-.central .mer img
-{
 	
+	background-color: yellow;
 }
 
 .panier
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
-	background-color: lightcyan;
-}
-
-.central .panier img
-{
 	
+	background-color: lightcyan;
 }
 
 .Amina
 {
-	border: 1px solid blue;
-	border-radius: 20px;
-	border-width: 2px;
-	height: 60em;
+	
 	background-color: purple;
 } 
-
-.central .Amina img
-{
-	
-}
 
 footer
 {
