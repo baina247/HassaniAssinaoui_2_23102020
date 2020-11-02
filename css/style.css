@@ -17,7 +17,7 @@ body
 
 h1, h2, h3, h4, p, button
 {
-	font-family: Raleway;
+	font-family: 'Raleway';
 }
 
 ul
@@ -27,7 +27,7 @@ ul
 
 header
 {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	display: flex;
 	justify-content: space-between;
 }
@@ -65,7 +65,7 @@ a.lien_menu:hover, a.lien_menu:active
 
 input
 {
-	border: 1px solid #F2F2F2;
+	border: 2px solid #F2F2F2;
 	outline: none;
 	padding-left: 20px;
 }
@@ -116,13 +116,12 @@ input
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	border:1px solid #F2F2F2;
+	border: 2px solid #F2F2F2;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
 	margin: 10px;
-	/* a retirer */
 	padding: auto;
 }
 .icone_filtre
@@ -145,7 +144,6 @@ input
 	border-bottom-right-radius: 30px;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
-	/* a retirer */
 	padding-left: 10px;
 	padding-right: 10px;
 	border:none;
@@ -185,73 +183,130 @@ input
 	justify-content: center;
 }
 /* hebergements à marseille */
-.central
+.container_hebergements
 {
 	display: flex;
-	border: 1px solid red;
-	width: 70%;
+	border: 1px solid blue;
+	width: 60%;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
+	border-radius: 10px; 
+}
+
+.container_hebergements img
+{
+	
+	border: 1px solid white;
+	height: 6em;
+	width: 99%;
+	margin-right: 1px;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
 }
 
 .carte_hotel
 {
-	width: 30%;
-	border: 1px solid blue;
-}
-.central img
-{
-	border: 2px solid green;
-	height: 7em;
-	width: 10em;	
-	border-top-right-radius: 1.1em; 
+	
+	width: 20%;
+	border: 1px solid #F2F2F2;
+	border-width: 1px;
+	padding: 1px;
+	margin: 5%;
 	border-top-left-radius: 1.1em;
-	
+	border-top-right-radius: 1.1em;
+	border-bottom-right-radius: 1.1em;
+	border-bottom-left-radius: 1.1em;
+	background-color: white; 
+}
+ /* h2 hebergements à marseille */
+#hebergements
+{
+	width: 60%;
+	border: 1px solid none;
+	position: relative;
+	top: 40px;
+	left: 90px;
 }
 
-.cannebiere
+.afficher_plus
 {
-	
-	background-color: pink;
-}
-
-.port
-{
-	
-	background-color: lightgreen;
-}
-
-.mouettes
-{
-	
-	background-color: orange;
-}
-
-.mer
-{
-	
-	background-color: yellow;
-}
-
-.panier
-{
-	
-	background-color: lightcyan;
-}
-
-.Amina
-{
-	
 	background-color: purple;
-} 
+}
+
+aside
+{
+	display: flex;
+	width: 30%;
+	border: 1px solid red;
+	flex-direction: column;
+	float: right;
+	padding-left: .5rem;
+    margin-left: .5rem;
+    position: relative;
+    bottom: 32rem;
+}
+
+.container_populaires img
+{
+	
+	border: 1px solid white;
+	height: 6em;
+	width: 20%;
+	margin-right: 1px;
+	border-top-left-radius: 1.1em; 
+	border-bottom-left-radius: 1.1em;
+}
+
+.container_populaires
+{
+	
+	display: flex;
+	flex-wrap: wrap;
+	width: 99%;
+	border: 1px solid #F2F2F2;
+	border-width: 1px;
+	padding: 1px;
+	background-color: blue; 
+}
+.flottant
+{
+	clear: both;
+}
+.container_activites
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border: 1px solid orange;
+	align-items: center;
+}
+
+.carte_activites
+{
+	display: flex;
+	border: 1px solid blue;
+	width: 30%;
+	flex-wrap: wrap;
+}
+
+.container_activites img
+{
+	border: 1px solid white;
+	height: 6em;
+	width: 100%;
+	border-top-left-radius: 1.1em; 
+	border-top-right-radius: 1.1em;
+}
 
 footer
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: #F2F2F2;
-	
+	background-color: #F2F2F2;	
 }
+
 footer div ul li
 {
 	padding: 5px;
