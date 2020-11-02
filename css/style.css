@@ -15,6 +15,11 @@ body
 	padding: 10px; 
 }
 
+h1, h2, h3, h4, p, button
+{
+	font-family: Raleway;
+}
+
 ul
 {
 	list-style: none;
@@ -22,6 +27,7 @@ ul
 
 header
 {
+	font-family: Raleway;
 	display: flex;
 	justify-content: space-between;
 }
@@ -33,24 +39,27 @@ header
 
 .menu li
 {
-	margin: 5px;
+	margin: 30px;
 }
 /* lien du menu de navigation */
 a.lien_menu:visited, a.lien_menu:link
 {
 	text-decoration: none;
+
 }
 
 a.lien_menu:hover, a.lien_menu:active
 {
 	color: #0065FC;
+	border-top: 2px solid #0065FC;
+	padding-top: 30px;
 }
 
 .container_recherche
 {
 	display: flex;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	width: 70%;
 }
 
@@ -100,6 +109,7 @@ input
 	align-items: center;
 	outline: none;
 	border: 1px solid none;
+	padding-bottom: 20px;
 }
 .container_filtre
 {
@@ -111,9 +121,9 @@ input
 	border-bottom-right-radius: 30px;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
-	padding-right: auto;
-	padding-left: auto;
 	margin: 10px;
+	/* a retirer */
+	padding: auto;
 }
 .icone_filtre
 {
@@ -135,17 +145,20 @@ input
 	border-bottom-right-radius: 30px;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
+	/* a retirer */
+	padding-left: 10px;
+	padding-right: 10px;
 	border:none;
 	outline: none;
 	font-weight: bold;
 }
 
-.container_filtre:hover, .bouton_filtre:hover
+.bouton_filtre:hover
 {
 	background-color: #0065FC;
 }
 
-.container_filtre:active, .bouton_filtre:active
+.bouton_filtre:active
 {
 	background-color: #DEEBFF;
 	color: black;
@@ -156,6 +169,7 @@ input
 {
 	display: flex;
 	align-items: center;
+	padding-bottom: 20px;
 	width: 70%
 }
 

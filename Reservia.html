@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- icon du site web mais n'en contient aucun pour le moment-->
-	<link rel="icon" href="images/xxx.png" type="Images/icon">
+	<link rel="icon" href="images/logo/Reservia.svg" type="Images/icon">
 	<title>Reservia</title>
 </head>
 
@@ -17,8 +16,8 @@
 		</div>
 		<nav>
 			<ul class="menu">
-				<li><a class="lien_menu" href="#hébergements">Hébergements</a></li>
-				<li><a class="lien_menu" href="#activités">Activités</a></li>
+				<li><a class="lien_menu" href="#hebergements">Hébergements</a></li>
+				<li><a class="lien_menu" href="#activites">Activités</a></li>
 				<li><a class="lien_menu" href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
@@ -72,7 +71,7 @@
 
 	<section>
 		<!--hébergements à Marseille-->
-		<h2 id="hébergements">Hébergements à Marseille</h2>
+		<h2 id="hebergements">Hébergements à Marseille</h2>
 		<article class="central">							
 			<div class="carte_hotel cannebiere">
 				<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo bergements">
@@ -135,54 +134,77 @@
 				<i class="fas fa-star fa-xs"></i>
 			</div>
 		</article>
-		<button>Afficher plus</button>
+		<button class="afficher_plus">Afficher plus</button>
 		<!-- les plus populaires -->
-		<aside>
-			
+		<aside>			
 			<h2>Les plus populaires</h2>
-			<div class="aside_populaires">
-				<i class="fas fa-chart-line"></i>
-			</div>
-			<div class="aside_populaires">
-				<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo hébergements">
-				<h4>Hôtel Le soleil du matin</h4>
-				<p>Nuit à partir de 128€</p>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-			</div>
-			<div class="star_populaires">
-				<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo hébergements">
-				<h4>Au coeur de l'eau Chambres d'hôtes</h4>
-				<p>Nuit à partir de 71€</p>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="far fa-star fa-xs"></i>				
-			</div>
-			<div class="star_populaires">
-				<img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo hébergements">
-				<h4>Hôtel Tout bleu et Blanc</h4>
-				<p>Nuit à partir de 68€</p>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="fas fa-star fa-xs"></i>
-				<i class="far fa-star fa-xs"></i>
+			<div class="container_populaires">
+				<div class="icone_populaires">
+					<i class="fas fa-chart-line"></i>
+				</div>
+				<div class="aside_populaires">
+					<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo hébergements">
+					<h4>Hôtel Le soleil du matin</h4>
+					<p>Nuit à partir de 128€</p>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>i
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+				</div>
+				<div class="star_populaires">
+					<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo hébergements">
+					<h4>Au coeur de l'eau Chambres d'hôtes</h4>
+					<p>Nuit à partir de 71€</p>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="far fa-star fa-xs"></i>				
+				</div>
+				<div class="star_populaires">
+					<img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo hébergements">
+					<h4>Hôtel Tout bleu et Blanc</h4>
+					<p>Nuit à partir de 68€</p>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="fas fa-star fa-xs"></i>
+					<i class="far fa-star fa-xs"></i>
+				</div>
 			</div>
 		</aside>
 	</section>
 
 	<!-- article bas de page activités -->
-	<section class="bas_de_page">
-		<h2 id="activités">Activités à Marseille</h2>
-		<!-- section activités -->
-		<article>
-			<!-- sera remplis prochainement -->
-		</article>
+	<section>
+		<h2 id="activites">Activités à Marseille</h2>
+		<div class="container_activites">
+			<div class="vieux_port">
+				<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo Vieux Port">
+				<h4>Vieux Port</h4>
+			</div>
+			<div class="pomegues">
+				<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo Fort de Pomègues">
+				<h4>Fort de Pomègues</h4>
+			</div>
+			<div class="frioul">
+				<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo îles du Frioul">
+				<h4>îles du Frioul</h4>
+			</div>
+			<div class="calanques">
+				<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo Parc National des Calanques">
+				<h4>Parc National des Calanques</h4>
+			</div>
+			<div class="notre_dame">
+				<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo Notre-Dame-de-la-Garde">
+				<h4>Notre-Dame-de-la-Garde</h4>
+			</div>
+			<div class="Longchamp">
+				<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo Parc Longchamp">
+				<h4>Parc Longchamp</h4>
+			</div>
+		</div>
 	</section>
 
 	<!-- bas de page -->
