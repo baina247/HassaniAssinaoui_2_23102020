@@ -182,98 +182,215 @@ input
 	align-content: center;
 	justify-content: center;
 }
+
 /* hebergements à marseille */
-.container_hebergements
+#liste_hebergements
 {
 	display: flex;
-	border: 1px solid blue;
+}
+
+.hebergements
+{
 	width: 60%;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	padding: 20px;
+	border: 1px solid blue;
 	background-color: #F2F2F2;
 	border-radius: 10px; 
 }
 
-.container_hebergements img
+#hebergements_titre
 {
-	
-	border: 1px solid white;
-	height: 6em;
-	width: 99%;
-	margin-right: 1px;
-	border-top-right-radius: 1.1em; 
-	border-top-left-radius: 1.1em;
+	padding-left: 10px; 
+}
+
+.container_hebergements
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .carte_hotel
 {
 	
-	width: 20%;
+	width: 30%;
 	border: 1px solid #F2F2F2;
 	border-width: 1px;
-	padding: 1px;
-	margin: 5%;
+	padding: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
 	border-top-left-radius: 1.1em;
 	border-top-right-radius: 1.1em;
 	border-bottom-right-radius: 1.1em;
 	border-bottom-left-radius: 1.1em;
 	background-color: white; 
 }
- /* h2 hebergements à marseille */
-#hebergements
+
+.hebergements_cannebiere
 {
-	width: 60%;
-	border: 1px solid none;
-	position: relative;
-	top: 40px;
-	left: 90px;
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_port
+{
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_mouettes
+{
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_mer
+{
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_panier
+{
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_amina
+{
+	width: 100%;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+	border: 1px solid white;
+	border-top-right-radius: 1.1em; 
+	border-top-left-radius: 1.1em;
+}
+
+.hebergements_info
+{
+	padding: 10px;
+}
+
+.fas
+{
+	color: #0065FC;
+}
+
+.fa
+{
+	color: #F2F2F2;
 }
 
 .afficher_plus
 {
-	background-color: purple;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	outline: none;  
 }
 
-aside
+.afficher_plus:hover
+{
+	background-color: #0065FC;
+}
+
+.afficher_plus:active
+{
+	background-color: #DEEBFF;
+	color: black;
+}
+
+#liste_populaires
 {
 	display: flex;
-	width: 30%;
-	border: 1px solid red;
-	flex-direction: column;
-	float: right;
-	padding-left: .5rem;
-    margin-left: .5rem;
-    position: relative;
-    bottom: 32rem;
+	width: 40%;
 }
 
-.container_populaires img
+.plus_populaires
 {
-	
+	width: 100%;
+	padding: 20px;
+	border: 1px solid red;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+.entete
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.matin_populaires
+{
+	width: 40%;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 	border: 1px solid white;
-	height: 6em;
-	width: 20%;
-	margin-right: 1px;
 	border-top-left-radius: 1.1em; 
 	border-bottom-left-radius: 1.1em;
 }
 
-.container_populaires
+.hotes_populaires
 {
-	
-	display: flex;
-	flex-wrap: wrap;
-	width: 99%;
-	border: 1px solid #F2F2F2;
-	border-width: 1px;
-	padding: 1px;
-	background-color: blue; 
+	width: 40%;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+	border: 1px solid white;
+	border-top-left-radius: 1.1em; 
+	border-bottom-left-radius: 1.1em;
 }
-.flottant
+
+.blanc_populaires
 {
-	clear: both;
+	width: 40%;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+	border: 1px solid white;
+	border-top-left-radius: 1.1em; 
+	border-bottom-left-radius: 1.1em;
 }
+
 .container_activites
 {
 	display: flex;
