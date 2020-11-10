@@ -18,13 +18,15 @@
 			<ul class="menu">
 				<li><a class="lien_menu" href="#hebergements_titre">Hébergements</a></li>
 				<li><a class="lien_menu" href="#activites_titre">Activités</a></li>
-				<li><a class="lien_menu" href="#">S'inscrire</a></li>
+				<li><a class="lien_inscrire" href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section>
 		<h1>Trouver votre hébergement pour des vacances de rêve</h1>
-		<p>En plein centre ville ou en pleine nature</p>
+		<div class="choix">
+			<p>En plein centre ville ou en pleine nature</p>
+		</div>
 		<div class="container_recherche">
 			<div class="icone_recherche">
 				<i class="fas fa-map-marker-alt"></i>
@@ -34,7 +36,6 @@
 		</div>
 		<!-- Filtre -->
 		<div class="container">
-
 			<h3>Filtres</h3>
 			<div class="container_filtre">
 				<div class="icone_filtre">
@@ -206,37 +207,35 @@
 		<div class="activites">
 			<h2 id="activites_titre">Activités à Marseille</h2>
 			<div class="container_activites">
-				<div class="activites_1">
-					<div class="carte_activites">
-						<div class="activites_port">
-							<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo port">
-							<h4>Vieux Port</h4>
-						</div>
+				<div class="carte_activites">
+					<div class="activites_port">
+						<div class="vieux_port image_port"></div>
+						<h4 class="nom_activites">Vieux Port</h4>
 					</div>
 					<div class="activites_1_1">
-						<div class="carte_activites">
-							<div class="activites_pomegues image_pomegues"></div>
-							<h4>Fort de Pomègues</h4>
+						<div class="activites_pomegues">
+							<div class="pomegues image_pomegues"></div>
+							<h4 class="nom_activites">Fort de Pomègues</h4>
 						</div>
-						<div class="carte_activites">
-							<div class="activites_frioul image_frioul"></div>
-							<h4>îles du Frioul</h4>
+						<div class="activites_frioul">
+							<div class="frioul image_frioul"></div>
+							<h4 class="nom_activites">îles du Frioul</h4>
 						</div>
 					</div>
 				</div>
-				<div class="activites_2">
-					<div class=" carte_activites">
-						<div class="activites_calanques image_calanques"></div>
-						<h4>Parc National des Calanques</h4>
+				<div class="carte_activites">
+					<div class=" activites_calanques">
+						<div class="calanques image_calanques"></div>
+						<h4 class="nom_activites">Parc National des Calanques</h4>
 					</div>
 					<div class="activites_2_1">
-						<div class="carte_activites">
-							<div class="activites_la_garde image_la_garde"></div>
-							<h4>Notre-Dame-de-la-Garde</h4>
+						<div class="activites_la_garde">
+							<div class="la_garde image_la_garde"></div>
+							<h4 class="nom_activites">Notre-Dame-de-la-Garde</h4>
 						</div>
-						<div class="carte_activites">
-							<div class="activites_longchamp image_longchamp"></div>
-							<h4>Parc Longchamp</h4>
+						<div class="activites_longchamp">
+							<div class="longchamp image_longchamp"></div>
+							<h4 class="nom_activites">Parc Longchamp</h4>
 						</div>
 					</div>
 				</div>
@@ -245,7 +244,7 @@
 	</section>
 
 	<!-- bas de page -->
-	<footer id="liste_footer">
+	<footer>
 		<div class="container_footer">
 			<div class="footer_propos">
 				<h3>A propos</h3>
