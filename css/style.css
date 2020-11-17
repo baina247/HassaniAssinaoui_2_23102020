@@ -30,6 +30,16 @@ ul
 	list-style: none;
 }
 
+.fas
+{
+	color: #0065FC;
+}
+
+.fa
+{
+	color: #F2F2F2;
+}
+
 header
 {
 	font-family: 'Raleway';
@@ -137,8 +147,9 @@ input::placeholder
 	padding: 0 6px 0 6px;
 }
 
-.bouton_search
+.icon_loupe
 {
+	color: white;
 	display: none;
 }
 
@@ -356,16 +367,6 @@ input::placeholder
 	margin: 10px;
 }
 
-.fas
-{
-	color: #0065FC;
-}
-
-.fa
-{
-	color: #F2F2F2;
-}
-
 .afficher_plus
 {
 	width: 13%;
@@ -546,7 +547,6 @@ input::placeholder
 	background-position: center;
 	background-size: cover;
 	background-image: url('../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-	border: 1px solid white;
 	border-radius: 20px 20px 0 0;
 	transition: transform .2s;
 }
@@ -569,7 +569,6 @@ input::placeholder
 	background-position: center;
 	background-size: cover;
 	background-image: url('../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-	border: 1px solid white;
 	border-radius: 20px 20px 0 0;
 	transition: transform .2s;
 }
@@ -596,7 +595,6 @@ input::placeholder
 	background-position: center;
 	background-size: cover;
 	background-image: url('../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-	border: 1px solid white;
 	border-radius: 20px 20px 0 0;
 	transition: transform .2s;
 }
@@ -628,7 +626,6 @@ input::placeholder
 	background-position: center;
 	background-size: cover;
 	background-image: url('../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-	border: 1px solid white;
 	border-radius: 20px 20px 0 0;
 	transition: transform .2s;
 
@@ -722,4 +719,19 @@ a.foot:hover, a.foot:active
 	}
 
 
+}
+
+@media (max-width: 400px)
+{
+
+	.icon_loupe
+	{
+
+		display: block;
+	}
+
+	.bouton_recherche span
+	{
+		display: none;
+	}
 }
