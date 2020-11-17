@@ -1,0 +1,28 @@
+@media all and (max-width: 1024px)
+{
+	.menu
+	{
+		width: auto;
+		text-align: left;
+	}
+
+	.menu li
+	{
+		flex-direction: column-reverse;
+	}
+
+	nav li
+	{
+		padding: 0 0 0 3px;
+	}
+
+	nav a
+	{
+		font-size: 1.1em;
+	}
+
+	nav a:hover
+	{
+		border: 0 0 0 0;
+	}
+}

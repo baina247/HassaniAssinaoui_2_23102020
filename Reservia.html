@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/logo/Reservia.svg" type="Images/icon">
@@ -9,15 +10,17 @@
 </head>
 
 <body>
-	<!-- menu de navigation -->
 	<header>
 		<div>
 			<img src="images/logo/Reservia.svg" alt="logo de Reservia" />
 		</div>
-		<nav>
-			<ul class="menu">
+		<!-- menu de navigation -->
+		<nav id="menu">
+			<ul class="ancres">
 				<li><a class="lien_menu" href="#hebergements_titre">Hébergements</a></li>
 				<li><a class="lien_menu" href="#activites_titre">Activités</a></li>
+			</ul>
+			<ul id="inscrire">
 				<li><a class="lien_inscrire" href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
@@ -33,6 +36,9 @@
 			</div>
 			<input type="search" name="search" placeholder="Marseille, France" />	
 			<button class="bouton_recherche">Rechercher</button>
+			<div class="bouton_search">
+				<i class="fas fa-search"></i>
+			</div>
 		</div>
 		<!-- Filtre -->
 		<div class="container">
@@ -161,7 +167,7 @@
 				</div>
 				<div class="container_populaires">
 					<div class="contenu_populaires">
-						<div class="matin_populaires image_matin"></div>
+						<div class="matin_populaires image_populaire"></div>
 						<div class="hebergements_populaires">
 							<h4>Hôtel Le soleil du<br>matin</h4>
 							<p>Nuit à partir de 128€</p>
@@ -173,7 +179,7 @@
 						</div>
 					</div>
 					<div class="contenu_populaires">
-						<div class="hotes_populaires image_hotes"></div>
+						<div class="hotes_populaires image_populaire"></div>
 						<div class="hebergements_populaires">
 							<h4>Au coeur de l'eau<br>Chambres d'hôtes</h4>
 							<p>Nuit à partir de 71€</p>
@@ -185,7 +191,7 @@
 						</div>				
 					</div>
 					<div class="contenu_populaires">
-						<div class="blanc_populaires image_blanc"></div>
+						<div class="blanc_populaires image_populaire"></div>
 						<div class="hebergements_populaires">
 							<div class="hebergements_populaires">
 								<h4>Hôtel Tout bleu et<br>Blanc</h4>

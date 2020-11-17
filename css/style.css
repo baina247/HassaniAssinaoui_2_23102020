@@ -37,14 +37,19 @@ header
 	justify-content: space-between;
 }
 /* menu navigation */
-.menu
+#menu
 {
 	display: flex;
 }
 
-.menu li
+#menu li
 {
 	margin: 30px;
+}
+
+.ancres
+{
+	display: flex;
 }
 
 /* lien du menu de navigation */
@@ -129,7 +134,12 @@ input::placeholder
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 	color: white;
-	width: 10%;
+	padding: 0 6px 0 6px;
+}
+
+.bouton_search
+{
+	display: none;
 }
 
 .bouton_recherche:hover
@@ -230,31 +240,34 @@ input::placeholder
 .hebergements
 {
 	width: 61%;
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
 	background-color: #F2F2F2;
 	border-radius: 10px; 
 }
 
 #hebergements_titre
 {
-	padding-left: 20px;
+	padding: 20px 0 0 30px;
 }
 
 .container_hebergements
 {
 	display: flex;
 	flex-wrap:wrap;
+	height: 100%;
 	align-items: center;
+	justify-content: center;
 }
 
 .carte_hotel
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 28%;
+	width: 27%;
 	border: 1px solid #F2F2F2;
 	padding: 3px;
-	margin: 20px 30px 20px 10px; 
+	margin: 2%; 
 	border-radius: 20px;
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
 	background-color: white;
@@ -355,18 +368,20 @@ input::placeholder
 
 .afficher_plus
 {
-	padding: 0 0 0 20px;
+	width: 13%;
+	flex-direction: inherit;
+	align-items: center;
+	margin: 0 0 20px 30px;
 	font-weight: bold;
 	font-size: 15px;
 	background-color: #F2F2F2;
 	border: none;
 	outline: none;
-	transition: transform .2s; 
 }
 
 .afficher_plus:hover
 {
-	transform: scale(1.2);
+	background-color: #DEEBFF;
 }
 
 .afficher_plus:active
@@ -377,7 +392,7 @@ input::placeholder
 #liste_populaires
 {
 	display: flex;
-	width: 33%;
+	width: 36%;
 }
 
 .plus_populaires
@@ -415,47 +430,32 @@ input::placeholder
 {
  padding-top: 20px;
 }
-
-.matin_populaires
+.image_populaire
 {
 	width: 30%;
 	height: 100px;
 	background-size: cover;
 	background-position: center;
-	background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 	border: 1px solid white;
 	margin-right: 20px;
 	border-top-left-radius: 20px; 
 	border-bottom-left-radius: 20px;
 	transition: transform .2s;
+}
+
+.matin_populaires
+{
+	background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
 
 .hotes_populaires
 {
-	width: 30%;
-	height: 100px;
-	background-size: cover;
-	background-position: center;
 	background-image: url('../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-	border: 1px solid white;
-	margin-right: 20px;
-	border-top-left-radius: 20px; 
-	border-bottom-left-radius: 20px;
-	transition: transform .2s;
 }
 
 .blanc_populaires
 {
-	width: 30%;
-	height: 100px;
-	background-size: cover;
-	background-position: center;
 	background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-	border: 1px solid white;
-	margin-right: 20px;
-	border-top-left-radius: 20px; 
-	border-bottom-left-radius: 20px;
-	transition: transform .2s;
 }
 
 .contenu_populaires:hover
@@ -706,4 +706,20 @@ a.foot:visited, a.foot:link
 a.foot:hover, a.foot:active
 {
 	color: #0065FC;
+}
+
+@media (max-width: 1300px)
+{
+
+	#liste_hebergements
+	{
+		flex-direction: column-reverse;
+	}
+
+	.hebergements
+	{
+		width: 100%;
+	}
+
+
 }
