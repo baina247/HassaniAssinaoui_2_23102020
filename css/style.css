@@ -1,7 +1,7 @@
 @font-face
 {	/*nouvelle police nommée Relaway*/
 	font-family: 'Raleway';
-	src:url('polices/Raleway-VariableFont_wght.ttf')
+	src:url('../polices/Raleway-VariableFont_wght.ttf')
 }
 
 *
