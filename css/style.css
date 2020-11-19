@@ -55,6 +55,13 @@ header
 	display: flex;
 	justify-content: space-between;
 }
+
+.logo_reservia
+{
+	background-color: pink;
+	height: fit-content;
+}
+
 /* menu navigation */
 #menu
 {
@@ -136,8 +143,7 @@ input::placeholder
 .icone_recherche
 {
 	border: 1px solid #F2F2F2;
-	border-width: 10px;
-	border-height: 10px;   
+	border-width: 10px;  
 	background-color: #F2F2F2;
 	border-radius: 10px 0 0 10px;
 	color: black;
@@ -182,9 +188,9 @@ input::placeholder
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	border: 2px solid #F2F2F2;
 	border-radius: 30px;
 	margin: 10px;
-	padding: auto;
 	transition: .2s;
 }
 .icone_filtre
@@ -260,7 +266,7 @@ input::placeholder
 
 #hebergements_titre
 {
-	padding: 30px 0 0 30px;
+	padding: 30px 0 0 40px;
 }
 
 .container_hebergements
@@ -497,7 +503,6 @@ input::placeholder
 .nom_activites
 {
 	padding: 10px 0 10px 10px;
-	font-style: bold;
 }
 
 .activites_port
@@ -648,15 +653,9 @@ input::placeholder
 	transform: scale(1.2);
 }
 
-#page_end
-{
-	
-}
-
 .container_footer
 {
 	display: flex;
-	width: 100%;
 	height: 150px;
 	background-color: #F2F2F2;
 	padding: 30px 0 20px 30px;
@@ -790,12 +789,138 @@ a.foot:hover, a.foot:active
 	{
 		display: none;
 	}
-
-
 }
 
-@media (max-width: 400px)
+@media (max-width: 768px)
 {
+	.container
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 67%;
+		outline: none;
+		padding: 0 0 20px 0;
+	}
+
+	.filtre_titre
+	{
+		padding: 5px 10px 0 0;
+		align-self: baseline;
+	}
+
+	.container_filtre
+	{
+		display: flex;
+    	justify-content: center;
+    	align-content: center;
+    	border: 2px solid #F2F2F2;
+    	border-radius: 30px;
+    	margin: 0 20px 10px 0;
+    	transition: .2s;
+	}
+
+	.icone_titre
+	{
+		padding: 10px 40px 0 40px;
+	}
+
+	#hebergements_titre
+	{
+		padding: 30px 0 0 30px;
+	}
+
+	.container_activites
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.carte_activites
+	{
+		width: 100%;
+		padding: 0;
+	}
+
+	.carte_activites_2
+	{
+		width: 100%;
+		padding: 40px 0 0 0;
+	}
+
+	#a_propos
+	{
+		display: flex;
+		width: 40%;
+		flex-direction: column; 
+	}
+
+	#nos_hebergements
+	{
+		display: flex;
+		width: 35%;
+		flex-direction: column;
+	}
+
+	#assistance
+	{
+		display: flex;
+		width: 26%;
+		flex-direction: column;
+	}
+
+	.hebergements_info i
+	{
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 425px)
+{
+	.logo_reservia
+	{
+		display: none;
+	}
+
+	#menu
+	{
+		display: flex;
+		flex-wrap: wrap-reverse;
+		flex: none;
+		width: 100%;
+	}
+
+	#inscrire
+	{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.ancres
+	{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.ancres
+	{
+		border-bottom: 2px solid #F2F2F2;
+		padding-bottom: 30px;
+	}
+
+	a.lien_menu:hover, a.lien_menu:active
+	{
+		border-bottom: 2px solid #0065FC;
+		padding-bottom: 30px;
+	}
+
+	a.lien_menu:hover, a.lien_menu:active
+	{
+		border-top: none;
+		padding-top: none;
+	}
 
 	.icon_loupe
 	{
@@ -807,4 +932,8 @@ a.foot:hover, a.foot:active
 	{
 		display: none;
 	}
+
+
+
+
 }
