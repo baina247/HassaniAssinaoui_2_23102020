@@ -1114,5 +1114,6 @@ a.foot:hover, a.foot:active
 	.icone_info
 	{
 		align-self: start;
+		height: 10px;
 	}
 }
