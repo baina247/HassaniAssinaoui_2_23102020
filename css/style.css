@@ -10,18 +10,10 @@
 	margin: 0;
 }
 
-body
-{
-	padding: 2px 30px 0 30px;
-}
-
-
 #page_end
 {
 	font-family: 'Raleway';
-	position: absolute;
 	width: 100%;
-	left: 0;
 }
 
 h1, h2, h3, h4, p, button
@@ -54,12 +46,22 @@ header
 	font-family: 'Raleway';
 	display: flex;
 	justify-content: space-between;
+	padding: 25px;
+}
+
+section
+{
+	padding: 25px; 
 }
 
 .logo_reservia
 {
-	background-color: pink;
 	height: fit-content;
+}
+
+.logo_reservia_responsive
+{
+	display: none; 
 }
 
 /* menu navigation */
@@ -68,14 +70,21 @@ header
 	display: flex;
 }
 
-#menu li
+#menu a
 {
-	margin: 30px;
+	padding: 20px;
 }
 
 .ancres
 {
 	display: flex;
+	align-items: center;
+}
+
+#inscrire
+{
+	display: flex;
+	align-items: center;
 }
 
 /* lien du menu de navigation */
@@ -115,9 +124,7 @@ a.lien_inscrire:hover, a.lien_inscrire:active
 .container_recherche
 {
 	display: flex;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	width: 70%;
+	padding: 20px 0 20px 0;
 }
 
 .icone_recherche i
@@ -129,7 +136,7 @@ input
 {
 	border: 2px solid #F2F2F2;
 	outline: none;
-	padding-left: 20px;
+	padding: 0 0 0 20px;
 }
 
 input::placeholder
@@ -143,9 +150,10 @@ input::placeholder
 .icone_recherche
 {
 	border: 1px solid #F2F2F2;
-	border-width: 10px;  
+	border-width: 15px;  
 	background-color: #F2F2F2;
 	border-radius: 10px 0 0 10px;
+	align-self: center;
 	color: black;
 }
 /* bouton recherche */
@@ -232,8 +240,6 @@ input::placeholder
 {
 	display: flex;
 	align-items: center;
-	padding: 0 0 20px 0;
-	width: 70%;
 }
 
 .icone_info
@@ -241,6 +247,7 @@ input::placeholder
 	display: flex;
 	color: #0065FC;
 	border-radius: 50%;
+	border: 2px solid #F2F2F2;
 	width: 10px;
 	padding: 3px;
 	margin: 0 10px 0 0;
@@ -284,7 +291,7 @@ input::placeholder
 	flex-wrap: wrap;
 	width: 27%;
 	padding: 3px;
-	margin: 2%; 
+	margin: 20px; 
 	border-radius: 20px;
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
 	background-color: white;
@@ -295,71 +302,45 @@ input::placeholder
 {
 	transform: scale(1.2);
 }
-
-.hebergements_cannebiere
+.hebergements_marseille
 {
 	width: 100%;
 	height: 100px;
 	background-position: center;
 	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.hebergements_cannebiere
+{
 	background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
 }
 
 .hebergements_port
 {
-	width: 100%;
-	height: 100px;
-	background-position: center;
-	background-size: cover;
+
 	background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
+
 }
 
 .hebergements_mouettes
 {
-	width: 100%;
-	height: 100px;
-	background-position: center;
-	background-size: cover;
 	background-image: url('../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
 }
 
 .hebergements_mer
 {
-	width: 100%;
-	height: 100px;
-	background-position: center;
-	background-size: cover;
 	background-image: url('../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
 }
 
 .hebergements_panier
 {
-	width: 100%;
-	height: 100px;
-	background-position: center;
-	background-size: cover;
 	background-image: url('../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
 }
 
 .hebergements_amina
 {
-	width: 100%;
-	height: 100px;
-	background-position: center;
-	background-size: cover;
 	background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-	border-top-right-radius: 20px; 
-	border-top-left-radius: 20px;
 }
 
 .hebergements_info
@@ -372,10 +353,9 @@ input::placeholder
 	width: 13%;
 	flex-direction: inherit;
 	align-items: center;
-	margin: 0 0 20px 30px;
+	margin: 10px 0 20px 30px;
 	font-weight: bold;
 	font-size: 15px;
-	background-color: #F2F2F2;
 	border: none;
 	outline: none;
 	transition: transform .2s;
@@ -430,7 +410,7 @@ input::placeholder
 
 .hebergements_populaires i
 {
- padding-top: 20px;
+	padding-top: 20px;
 }
 .image_populaire
 {
@@ -441,7 +421,6 @@ input::placeholder
 	margin-right: 20px;
 	border-top-left-radius: 20px; 
 	border-bottom-left-radius: 20px;
-	transition: transform .2s;
 }
 
 .matin_populaires
@@ -481,7 +460,7 @@ input::placeholder
 
 .container_activites
 {
- 	display: flex;
+	display: flex;
 	width: 100%;
 	align-items: center;
 }
@@ -656,7 +635,6 @@ input::placeholder
 .container_footer
 {
 	display: flex;
-	height: 150px;
 	background-color: #F2F2F2;
 	padding: 30px 0 20px 30px;
 }
@@ -726,33 +704,21 @@ a.foot:hover, a.foot:active
 
 	.icone_titre
 	{
-		padding: 10px 60px 0 60px;
+		padding: 10px 30px 0 30px;
 		margin: 20px 0 0 0;
 	}
 
 	.container_populaires
 	{
 		display: flex;
-		align-items: center;
 		justify-content: center;
 	}
 
 	.contenu_populaires
 	{
-		display: flex;
-		flex-wrap: wrap;
-		width: 27%;
-		padding: 3px;
+		display: unset;
+		width: 50%;
 		margin: 2%; 
-		border-radius: 20px;
-		box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
-		background-color: white;
-		transition: transform .2s;
-	}
-
-	.contenu_populaires:hover
-	{
-		transform: scale(1.2);
 	}
 
 	.image_populaire
@@ -765,64 +731,18 @@ a.foot:hover, a.foot:active
 		margin: 0;
 	}
 
-	.matin_populaires
-	{
-		background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-	}
-
-	.hotes_populaires
-	{
-		background-image: url('../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-	}
-
-	.blanc_populaires
-	{
-		background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-	}
-
 	.hebergements_populaires
 	{
-		margin: 10px;
+		margin: 2%;
 	}
 
-	.hebergements_populaires br
-	{
-		display: none;
-	}
 }
 
-@media (max-width: 768px)
+@media (max-width: 980px)
 {
-	.container
-	{
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		width: 67%;
-		outline: none;
-		padding: 0 0 20px 0;
-	}
-
-	.filtre_titre
-	{
-		padding: 5px 10px 0 0;
-		align-self: baseline;
-	}
-
-	.container_filtre
-	{
-		display: flex;
-    	justify-content: center;
-    	align-content: center;
-    	border: 2px solid #F2F2F2;
-    	border-radius: 30px;
-    	margin: 0 20px 10px 0;
-    	transition: .2s;
-	}
-
 	.icone_titre
 	{
-		padding: 10px 40px 0 40px;
+		padding: 10px 20px 0 20px;
 	}
 
 	#hebergements_titre
@@ -875,51 +795,177 @@ a.foot:hover, a.foot:active
 	}
 }
 
-@media (max-width: 425px)
+@media (max-width: 711px)
 {
-	.logo_reservia
+	
+	.carte_hotel
 	{
-		display: none;
+		margin: 2%;
+	}
+
+	.hebergements_populaires
+	{
+		margin: 5%;
+	}
+
+	.container
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%%;
+		outline: none;
+		padding: 0 0 20px 0;
+	}
+
+	.filtre_titre
+	{
+		padding: 5px 10px 0 0;
+		align-self: baseline;
+		width: 100%;
+		padding: 0 0 10px 0;
+	}
+
+	.container_filtre
+	{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		border: 2px solid #F2F2F2;
+		border-radius: 30px;
+		margin: 0 20px 10px 0;
+		transition: .2s;
+	}
+
+	.container_footer
+	{
+		flex-wrap: wrap;
+	}
+
+	#a_propos
+	{
+		width: 100%;
+		height: 150px;
+	}
+
+	#nos_hebergements
+	{
+		width: 100%;
+		height: 120px;
+	}
+
+	#assistance
+	{
+		width: 100%;
+		height: 110px;
+	}
+}
+
+@media (max-width: 622px)
+{
+
+	header
+	{
+		padding: 0;
 	}
 
 	#menu
 	{
 		display: flex;
 		flex-wrap: wrap-reverse;
-		flex: none;
 		width: 100%;
+	}
+
+	.logo_reservia
+	{
+		display: none;
+	}
+
+	.logo_reservia_responsive
+	{
+		display: block;
+		padding: 20px;	
 	}
 
 	#inscrire
 	{
 		display: flex;
-		width: 100%;
 		justify-content: space-between;
+		width: 100%;
 	}
 
 	.ancres
 	{
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 	}
 
-	.ancres
+	.hebergements_menu
 	{
-		border-bottom: 2px solid #F2F2F2;
-		padding-bottom: 30px;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.activites_menu
+	{
+		width: 50%;
+		display: flex;
+		justify-content: center;
 	}
 
 	a.lien_menu:hover, a.lien_menu:active
 	{
 		border-bottom: 2px solid #0065FC;
-		padding-bottom: 30px;
+		border-top: hidden;
 	}
 
-	a.lien_menu:hover, a.lien_menu:active
+	a.lien_menu
 	{
-		border-top: none;
-		padding-top: none;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.hebergements_populaires
+	{
+		margin: 2%;
+	}
+
+	.container
+	{
+		padding: 20px 0 20px 0;
+	}
+
+	.choix
+	{
+		padding: 10px 0 10px 0;
+	}
+
+	.container_recherche
+	{
+		width: 100%;
+		border: 2px solid #F2F2F2;
+		padding: 0;
+		border-radius: 12px;
+		outline: none;
+	}
+
+	input
+	{
+		width: 100%;
+		border: none;
+	}
+
+	.bouton_recherche
+	{
+		border-radius: 10px;
+		align-self: center;
+		width: 50px;
+		height: 48px; 
 	}
 
 	.icon_loupe
@@ -933,7 +979,140 @@ a.foot:hover, a.foot:active
 		display: none;
 	}
 
+	#liste_hebergements
+	{
+		padding: 0;
+	}
 
+	#liste_populaires
+	{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
 
+	.container_populaires
+	{
+		flex-wrap: wrap;
+	}
 
+	.icone_titre
+	{
+		display: flex;
+		margin: 20px;
+		padding: 10px 5px 0 5px;
+		justify-content: space-between;
+	}
+
+	.contenu_populaires
+	{
+		display: flex;
+		width: 100%;
+		margin: 20px;
+		padding: 3px;
+		border-radius: 20px;
+		background-color: white;
+	}
+
+	.container_hebergements
+	{
+		padding: 0 0 20px 0;
+	}
+
+	.hebergements_populaires i
+	{
+		padding-top: 35%;
+	}
+
+	.hebergements_populaires br
+	{
+		display: initial;
+		justify-content: flex-end;
+	}
+
+	.image_populaire
+	{
+		width: 30%;
+		height: 150px;
+		background-size: cover;
+		background-position: center;
+		margin: 0 10px 0 0;
+		border-radius: 20px 0 0 20px;
+	}
+
+	.hebergements_info i
+	{
+		padding: 10px 0 0 0;
+	}
+
+	.hebergements
+	{
+		background-color: white;
+	}
+
+	.carte_hotel
+	{
+		width: 100%;
+		margin: 20px;
+	}
+
+	.afficher_plus
+	{
+		align-items: start;
+		width: 35%;
+		background-color: white;
+		padding: 0 0 0 20px;
+		margin: 0;
+	}
+
+	.carte_activites
+	{
+		flex-wrap: wrap;
+	}
+
+	.activites_port
+	{
+		width: 100%;
+		margin: 0 0 40px 0; 
+	}
+
+	.vieux_port
+	{
+		height: 170px;
+	}
+
+	.ensemble_activites
+	{
+		width: 100%
+	}
+
+	.frioul
+	{
+		height: 170px;
+	}
+
+	.carte_activites_2
+	{
+		flex-wrap: wrap;
+	}
+
+	.activites_calanques
+	{
+		width: 100%;
+		margin: 0 0 40px 0; 
+	}
+
+	.calanques
+	{
+		height: 170px;
+	}
+
+}
+
+@media (max-width: 500px)
+{
+	.icone_info
+	{
+		align-self: start;
+	}
 }
