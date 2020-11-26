@@ -248,7 +248,7 @@ input::placeholder
 /* icone info reste de logements */
 .container_info
 {
-	display: flex;
+	display: -webkit-box;
 	align-items: center;
 }
 
@@ -843,13 +843,7 @@ a.foot:hover, a.foot:active
 
 	.container_filtre
 	{
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		border: 2px solid #F2F2F2;
-		border-radius: 30px;
 		margin: 0 20px 10px 0;
-		transition: .2s;
 	}
 
 	.container_footer
