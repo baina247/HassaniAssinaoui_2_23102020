@@ -751,6 +751,11 @@ a.foot:hover, a.foot:active
 		margin: 2%;
 	}
 
+	.carte_hotel:hover
+	{
+		transform: none;
+	}
+
 }
 
 @media (max-width: 980px)
@@ -803,26 +808,10 @@ a.foot:hover, a.foot:active
 		width: 26%;
 		flex-direction: column;
 	}
-
-	.hebergements_info i
-	{
-		padding-top: 20px;
-	}
 }
 
-@media (max-width: 711px)
+@media (max-width: 782px)
 {
-	
-	.carte_hotel
-	{
-		margin: 2%;
-	}
-
-	.hebergements_populaires
-	{
-		margin: 5%;
-	}
-
 	.container
 	{
 		display: flex;
@@ -833,6 +822,11 @@ a.foot:hover, a.foot:active
 		padding: 0 0 20px 0;
 	}
 
+	.container_filtre
+	{
+		margin: 0 20px 10px 0;
+	}
+
 	.filtre_titre
 	{
 		padding: 5px 10px 0 0;
@@ -841,9 +835,30 @@ a.foot:hover, a.foot:active
 		padding: 0 0 10px 0;
 	}
 
-	.container_filtre
+	#hebergements_titre
 	{
-		margin: 0 20px 10px 0;
+		padding: 30px 0 0 20px;
+	}
+
+	.carte_hotel
+	{
+		margin: 2%;
+		width: 100%;
+	}
+
+	.hebergements_populaires
+	{
+		margin: 5%;
+	}
+
+	.hebergements_marseille
+	{
+		height: 170px;
+	}
+
+	.afficher_plus
+	{
+		margin: 10px 0 20px 20px; 
 	}
 
 	.container_footer
@@ -1067,8 +1082,7 @@ a.foot:hover, a.foot:active
 
 	.afficher_plus
 	{
-		align-items: start;
-		width: 35%;
+		width: 18%;
 		background-color: white;
 		padding: 0 0 0 20px;
 		margin: 0;
