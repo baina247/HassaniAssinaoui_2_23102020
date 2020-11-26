@@ -232,7 +232,7 @@ input::placeholder
 	padding-right: 10px;
 	border:none;
 	outline: none;
-	font-weight: bold;
+	font-weight: 900;
 }
 
 .container_filtre:hover
@@ -293,6 +293,11 @@ input::placeholder
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+}
+
+.hebergements_populaires span, .hebergements_info span
+{
+	font-weight: 900; 
 }
 
 .carte_hotel
@@ -823,7 +828,7 @@ a.foot:hover, a.foot:active
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		width: 100%%;
+		width: 100%;
 		outline: none;
 		padding: 0 0 20px 0;
 	}
