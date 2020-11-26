@@ -199,7 +199,7 @@ input::placeholder
 	display: flex;
 	align-items: center;
 	outline: none;
-	padding-bottom: 20px;
+	padding: 0 0 20px 0;
 }
 .container_filtre
 {
@@ -227,9 +227,8 @@ input::placeholder
 .bouton_filtre
 {
 	background-color: white;
-	border-radius: 30px 30px 30px 30px; 
-	padding-left: 10px;
-	padding-right: 10px;
+	border-radius: 30px; 
+	padding:0 10px 0 10px; 
 	border:none;
 	outline: none;
 	font-weight: 900;
@@ -304,7 +303,7 @@ input::placeholder
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 27%;
+	width: 26%;
 	padding: 3px;
 	margin: 20px; 
 	border-radius: 20px;
@@ -333,9 +332,7 @@ input::placeholder
 
 .hebergements_port
 {
-
 	background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-
 }
 
 .hebergements_mouettes
@@ -408,6 +405,7 @@ input::placeholder
 	padding: 10px 30px 0 30px;
 	justify-content: space-between;
 }
+
 .fa-chart-line
 {
 	color: black;
@@ -427,6 +425,7 @@ input::placeholder
 {
 	padding-top: 20px;
 }
+
 .image_populaire
 {
 	width: 30%;
@@ -463,6 +462,7 @@ input::placeholder
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .activites
 {
 	padding: 0 0 60px 0;
