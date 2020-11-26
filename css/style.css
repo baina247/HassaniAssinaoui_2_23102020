@@ -31,12 +31,27 @@ ul
 	list-style: none;
 }
 
-.fas
+.black_map_marker
+{
+	color: black;
+}
+
+.blue_icone_filtre
 {
 	color: #0065FC;
 }
 
-.fa
+.blue_info
+{
+	color: #0065FC;
+}
+
+.blue_star
+{
+	color: #0065FC;
+}
+
+.gray_star
 {
 	color: #F2F2F2;
 }
@@ -125,11 +140,6 @@ a.lien_inscrire:hover, a.lien_inscrire:active
 {
 	display: flex;
 	padding: 20px 0 20px 0;
-}
-
-.icone_recherche i
-{
-	color: black;
 }
 
 input
