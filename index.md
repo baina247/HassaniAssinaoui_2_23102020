@@ -1,2 +1,1 @@
-# HassaniAssinaoui_2_23102020
-Projet P2 OC
+https://github.com/baina247/HassaniAssinaoui_2_23102020.git
