@@ -596,7 +596,7 @@ input::placeholder
 	transition: transform .2s;
 }
 
-.activites_calanques:hover
+v
 {
 	transform: scale(1.2);
 }
@@ -757,9 +757,29 @@ a.foot:hover, a.foot:active
 		transform: none;
 	}
 
+	.contenu_populaires:hover
+	{
+		transform: none;
+	}
+
 	#afficher
 	{
 		padding: 0 0 20px 80px;
+	}
+
+	.afficher_plus:hover
+	{
+		transform: none;
+	}
+
+	.activites_port:hover, .activites_pomegues:hover, .activites_frioul:hover, .activites_calanques:hover, .activites_la_garde:hover, .activites_longchamp:hover
+	{
+		transform: none;
+	}
+
+	.container_filtre:hover
+	{
+		transform: none;
 	}
 }
 
