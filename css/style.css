@@ -596,7 +596,7 @@ input::placeholder
 	transition: transform .2s;
 }
 
-v
+.activites_calanques:hover
 {
 	transform: scale(1.2);
 }
