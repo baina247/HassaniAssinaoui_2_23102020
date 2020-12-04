@@ -69,16 +69,6 @@ section
 	padding: 25px; 
 }
 
-.logo_reservia
-{
-	height: fit-content;
-}
-
-.logo_reservia_responsive
-{
-	display: none; 
-}
-
 /* menu navigation */
 #menu
 {
@@ -91,12 +81,6 @@ section
 }
 
 .ancres
-{
-	display: flex;
-	align-items: center;
-}
-
-#inscrire
 {
 	display: flex;
 	align-items: center;
@@ -919,7 +903,10 @@ a.foot:hover, a.foot:active
 {
 	header
 	{
+		display: flex;
+		flex-wrap: wrap;
 		padding: 0;
+		width: 100%;
 	}
 
 	#menu
@@ -931,20 +918,8 @@ a.foot:hover, a.foot:active
 
 	.logo_reservia
 	{
-		display: none;
-	}
-
-	.logo_reservia_responsive
-	{
 		display: block;
 		padding: 20px;	
-	}
-
-	#inscrire
-	{
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
 	}
 
 	.ancres
@@ -967,6 +942,13 @@ a.foot:hover, a.foot:active
 		width: 50%;
 		display: flex;
 		justify-content: center;
+	}
+	
+	.inscrire_menu
+	{
+		position: absolute;
+    	top: 2rem;
+    	right: 5%;
 	}
 
 	a.lien_menu:hover, a.lien_menu:active
