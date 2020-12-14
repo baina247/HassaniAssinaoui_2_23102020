@@ -947,8 +947,8 @@ a.foot:hover, a.foot:active
 	.inscrire_menu
 	{
 		position: absolute;
-    	top: 2rem;
-    	right: 5%;
+		top: 2rem;
+		right: 5%;
 	}
 
 	a.lien_menu:hover, a.lien_menu:active
